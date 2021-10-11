@@ -1,0 +1,270 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title> stycky menu </title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/css/bootstrap.min.css" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.css"/>
+</head>
+<style>
+*{
+    margin: 0;
+    padding: 0;
+    scroll-behavior: smooth;
+    box-sizing: border-box;
+}
+.logo_section {
+    width: 20%;
+}
+.header_section{
+    width: 85%;
+    display: flex;
+    margin: auto;
+    position: relative;
+    transition: .4s;
+}
+header.stycky ul.nav_list li a{
+    color: black;
+}
+.stycky {
+    background: white;
+    box-shadow: 0 0 2px 3px #1111111c;
+    transition: .4s;
+}
+header {
+    /* background-color: black; */
+    position: fixed;
+    top: 0;
+    width: 100%;
+    left: 0;
+    transition: .5s;
+    z-index: 111111;
+}
+.nav_list {
+    display: flex;
+    justify-content: space-evenly;
+    width: 50%;
+    margin: auto;
+    position: relative;
+}
+ul.nav_list li a {
+    text-decoration: none;
+    font-size: 20px;
+    font-weight: 700;
+    position: relative;
+    color: #fff;
+}
+ul.nav_list li {
+    list-style: none;
+    padding: 10px;
+}
+.slide_content img {
+    width: 100%;
+}
+.text_blog {
+    margin: auto;
+    line-height: 25px;
+    font-size: 19px;
+}
+.more_text {
+    background: aqua;
+    display: none;
+}
+button.read_more {
+    padding: 5px 10px;
+    font-size: 16px;
+    border-radius: 25px;
+}
+.more_text.show_more{
+    display: inline;
+}
+.btn{
+    text-align: center;
+}
+.to_top{
+    font-size: 15px;
+    position: fixed;
+    bottom: 15px;
+    right: 15px;
+    /* border-radius: 50%; */
+    background: #f7f7f7;
+    padding: 5px;
+    opacity: 0;
+    visibility: hidden;
+    transition: .4s;
+    color: pink;
+}
+.to_top.show_btn{
+    opacity: 1;
+    visibility: visible;
+    transition: .4s;
+}
+.section_1,.section_2,.section_3,.section_4{
+    height: 100vh;
+    background-color: blueviolet;
+    font-size: 40px;
+    text-align: center;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.section_2{
+    background-color: chartreuse;
+}
+.section_3{
+    background-color: crimson;
+}
+.section_4{
+    background-color:darkblue;
+    color:white;
+}
+span {
+    color: pink;
+}
+</style>
+<body>
+<header>
+<div class="header_section">
+    <div class="logo_section">
+        <div class="logo">
+            <img src="image/(logo)hasan anamul.png" alt="">
+        </div>
+    </div>
+        <ul class="nav_list">
+            <li><a href="#">Home</a></li>
+            <li><a href="#1">About us</a></li>
+            <li><a href="#2">Contact us</a></li>
+            <li><a href="#3">Services</a></li>
+            <li><a href="#4">Blogs</a></li>
+        </ul>
+</div>
+</header>
+<section class="container-full-width">
+    <div class="slide_section">
+        <div class="slide_items">
+            <div class="slide_content">
+                <img src="image/download.png" alt="">
+            </div>
+        </div>
+    </div>
+</section>
+<section>
+<div class="container my-4">
+    <div class="row">
+        <div class="col-sm-4 ">
+            <div class="text_blog bg-primary p-4">
+                <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Cumque consectetur quas explicabo ea odit blanditiis nostrum eaque! Ex numquam ipsum harum nam recusandae vel inventore a quidem tempora nostrum delectus, esse porro fugiat sunt veniam ut cumque corrupti, quisquam sapiente! Harum totam ipsa eius aspernatur cum possimus voluptate velit esse ducimus, voluptatum, mollitia quasi praesentium quo? Modi beatae quaerat numquam nobis officiis hic necessitatibus error earum quidem. Laborum ea facilis fugit veritatis suscipit illo praesentium deleniti aspernatur accusamus possimus amet nihil ipsam, placeat, omnis nostrum impedit et pariatur modi quisquam eum. Repellendus aspernatur consequuntur asperiores unde tempora optio magni animi!</p><br>
+                <div class="more_text">
+                <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Cumque consectetur quas explicabo ea odit blanditiis nostrum eaque! Ex numquam ipsum harum nam recusandae vel inventore a quidem tempora nostrum delectus, esse porro fugiat sunt veniam ut cumque corrupti, quisquam sapiente! Harum totam ipsa eius aspernatur cum possimus voluptate velit esse ducimus, voluptatum, mollitia quasi praesentium quo? Modi beatae quaerat numquam nobis officiis hic necessitatibus error earum quidem. Laborum ea facilis fugit veritatis suscipit illo praesentium deleniti aspernatur accusamus possimus amet nihil ipsam, placeat, omnis nostrum impedit et pariatur modi quisquam eum. Repellendus aspernatur consequuntur asperiores unde tempora optio magni animi!</p>
+                <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Cumque consectetur quas explicabo ea odit blanditiis nostrum eaque! Ex numquam ipsum harum nam recusandae vel inventore a quidem tempora nostrum delectus, esse porro fugiat sunt veniam ut cumque corrupti, quisquam sapiente! Harum totam ipsa eius aspernatur cum possimus voluptate velit esse ducimus, voluptatum, mollitia quasi praesentium quo? Modi beatae quaerat numquam nobis officiis hic necessitatibus error earum quidem. Laborum ea facilis fugit veritatis suscipit illo praesentium deleniti aspernatur accusamus possimus amet nihil ipsam, placeat, omnis nostrum impedit et pariatur modi quisquam eum. Repellendus aspernatur consequuntur asperiores unde tempora optio magni animi!</p><br>
+                
+                <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Cumque consectetur quas explicabo ea odit blanditiis nostrum eaque! Ex numquam ipsum harum nam recusandae vel inventore a quidem tempora nostrum delectus, esse porro fugiat sunt veniam ut cumque corrupti, quisquam sapiente! Harum totam ipsa eius aspernatur cum possimus voluptate velit esse ducimus, voluptatum, mollitia quasi praesentium quo? Modi beatae quaerat numquam nobis officiis hic necessitatibus error earum quidem. Laborum ea facilis fugit veritatis suscipit illo praesentium deleniti aspernatur accusamus possimus amet nihil ipsam, placeat, omnis nostrum impedit et pariatur modi quisquam eum. Repellendus aspernatur consequuntur asperiores unde tempora optio magni animi!</p><br>
+                <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Cumque consectetur quas explicabo ea odit blanditiis nostrum eaque! Ex numquam ipsum harum nam recusandae vel inventore a quidem tempora nostrum delectus, esse porro fugiat sunt veniam ut cumque corrupti, quisquam sapiente! Harum totam ipsa eius aspernatur cum possimus voluptate velit esse ducimus, voluptatum, mollitia quasi praesentium quo? Modi beatae quaerat numquam nobis officiis hic necessitatibus error earum quidem. Laborum ea facilis fugit veritatis suscipit illo praesentium deleniti aspernatur accusamus possimus amet nihil ipsam, placeat, omnis nostrum impedit et pariatur modi quisquam eum. Repellendus aspernatur consequuntur asperiores unde tempora optio magni animi!</p>
+                </div>
+                <div class=" text-center pb-3"><button class="btn btn-success read_more">Read more >>> </button>
+                </div><!-- btn -->
+        
+            </div>
+        </div>
+        <div class="col-sm-4 ">
+            <div class="text_blog bg-success p-4">
+                <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Cumque consectetur quas explicabo ea odit blanditiis nostrum eaque! Ex numquam ipsum harum nam recusandae vel inventore a quidem tempora nostrum delectus, esse porro fugiat sunt veniam ut cumque corrupti, quisquam sapiente! Harum totam ipsa eius aspernatur cum possimus voluptate velit esse ducimus, voluptatum, mollitia quasi praesentium quo? Modi beatae quaerat numquam nobis officiis hic necessitatibus error earum quidem. Laborum ea facilis fugit veritatis suscipit illo praesentium deleniti aspernatur accusamus possimus amet nihil ipsam, placeat, omnis nostrum impedit et pariatur modi quisquam eum. Repellendus aspernatur consequuntur asperiores unde tempora optio magni animi!</p><br>
+                <div class="more_text">
+                <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Cumque consectetur quas explicabo ea odit blanditiis nostrum eaque! Ex numquam ipsum harum nam recusandae vel inventore a quidem tempora nostrum delectus, esse porro fugiat sunt veniam ut cumque corrupti, quisquam sapiente! Harum totam ipsa eius aspernatur cum possimus voluptate velit esse ducimus, voluptatum, mollitia quasi praesentium quo? Modi beatae quaerat numquam nobis officiis hic necessitatibus error earum quidem. Laborum ea facilis fugit veritatis suscipit illo praesentium deleniti aspernatur accusamus possimus amet nihil ipsam, placeat, omnis nostrum impedit et pariatur modi quisquam eum. Repellendus aspernatur consequuntur asperiores unde tempora optio magni animi!</p>
+                <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Cumque consectetur quas explicabo ea odit blanditiis nostrum eaque! Ex numquam ipsum harum nam recusandae vel inventore a quidem tempora nostrum delectus, esse porro fugiat sunt veniam ut cumque corrupti, quisquam sapiente! Harum totam ipsa eius aspernatur cum possimus voluptate velit esse ducimus, voluptatum, mollitia quasi praesentium quo? Modi beatae quaerat numquam nobis officiis hic necessitatibus error earum quidem. Laborum ea facilis fugit veritatis suscipit illo praesentium deleniti aspernatur accusamus possimus amet nihil ipsam, placeat, omnis nostrum impedit et pariatur modi quisquam eum. Repellendus aspernatur consequuntur asperiores unde tempora optio magni animi!</p><br>
+                
+                <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Cumque consectetur quas explicabo ea odit blanditiis nostrum eaque! Ex numquam ipsum harum nam recusandae vel inventore a quidem tempora nostrum delectus, esse porro fugiat sunt veniam ut cumque corrupti, quisquam sapiente! Harum totam ipsa eius aspernatur cum possimus voluptate velit esse ducimus, voluptatum, mollitia quasi praesentium quo? Modi beatae quaerat numquam nobis officiis hic necessitatibus error earum quidem. Laborum ea facilis fugit veritatis suscipit illo praesentium deleniti aspernatur accusamus possimus amet nihil ipsam, placeat, omnis nostrum impedit et pariatur modi quisquam eum. Repellendus aspernatur consequuntur asperiores unde tempora optio magni animi!</p><br>
+                <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Cumque consectetur quas explicabo ea odit blanditiis nostrum eaque! Ex numquam ipsum harum nam recusandae vel inventore a quidem tempora nostrum delectus, esse porro fugiat sunt veniam ut cumque corrupti, quisquam sapiente! Harum totam ipsa eius aspernatur cum possimus voluptate velit esse ducimus, voluptatum, mollitia quasi praesentium quo? Modi beatae quaerat numquam nobis officiis hic necessitatibus error earum quidem. Laborum ea facilis fugit veritatis suscipit illo praesentium deleniti aspernatur accusamus possimus amet nihil ipsam, placeat, omnis nostrum impedit et pariatur modi quisquam eum. Repellendus aspernatur consequuntur asperiores unde tempora optio magni animi!</p>
+                </div>
+                <div class=" text-center pb-3"><button class="btn btn-success read_more">Read more >>> </button>
+                </div><!-- btn -->
+        
+            </div>
+        </div>
+        <div class="col-sm-4 ">
+            <div class="text_blog bg-info p-4">
+                <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Cumque consectetur quas explicabo ea odit blanditiis nostrum eaque! Ex numquam ipsum harum nam recusandae vel inventore a quidem tempora nostrum delectus, esse porro fugiat sunt veniam ut cumque corrupti, quisquam sapiente! Harum totam ipsa eius aspernatur cum possimus voluptate velit esse ducimus, voluptatum, mollitia quasi praesentium quo? Modi beatae quaerat numquam nobis officiis hic necessitatibus error earum quidem. Laborum ea facilis fugit veritatis suscipit illo praesentium deleniti aspernatur accusamus possimus amet nihil ipsam, placeat, omnis nostrum impedit et pariatur modi quisquam eum. Repellendus aspernatur consequuntur asperiores unde tempora optio magni animi!</p><br>
+                <div class="more_text">
+                <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Cumque consectetur quas explicabo ea odit blanditiis nostrum eaque! Ex numquam ipsum harum nam recusandae vel inventore a quidem tempora nostrum delectus, esse porro fugiat sunt veniam ut cumque corrupti, quisquam sapiente! Harum totam ipsa eius aspernatur cum possimus voluptate velit esse ducimus, voluptatum, mollitia quasi praesentium quo? Modi beatae quaerat numquam nobis officiis hic necessitatibus error earum quidem. Laborum ea facilis fugit veritatis suscipit illo praesentium deleniti aspernatur accusamus possimus amet nihil ipsam, placeat, omnis nostrum impedit et pariatur modi quisquam eum. Repellendus aspernatur consequuntur asperiores unde tempora optio magni animi!</p>
+                <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Cumque consectetur quas explicabo ea odit blanditiis nostrum eaque! Ex numquam ipsum harum nam recusandae vel inventore a quidem tempora nostrum delectus, esse porro fugiat sunt veniam ut cumque corrupti, quisquam sapiente! Harum totam ipsa eius aspernatur cum possimus voluptate velit esse ducimus, voluptatum, mollitia quasi praesentium quo? Modi beatae quaerat numquam nobis officiis hic necessitatibus error earum quidem. Laborum ea facilis fugit veritatis suscipit illo praesentium deleniti aspernatur accusamus possimus amet nihil ipsam, placeat, omnis nostrum impedit et pariatur modi quisquam eum. Repellendus aspernatur consequuntur asperiores unde tempora optio magni animi!</p><br>
+                
+                <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Cumque consectetur quas explicabo ea odit blanditiis nostrum eaque! Ex numquam ipsum harum nam recusandae vel inventore a quidem tempora nostrum delectus, esse porro fugiat sunt veniam ut cumque corrupti, quisquam sapiente! Harum totam ipsa eius aspernatur cum possimus voluptate velit esse ducimus, voluptatum, mollitia quasi praesentium quo? Modi beatae quaerat numquam nobis officiis hic necessitatibus error earum quidem. Laborum ea facilis fugit veritatis suscipit illo praesentium deleniti aspernatur accusamus possimus amet nihil ipsam, placeat, omnis nostrum impedit et pariatur modi quisquam eum. Repellendus aspernatur consequuntur asperiores unde tempora optio magni animi!</p><br>
+                <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Cumque consectetur quas explicabo ea odit blanditiis nostrum eaque! Ex numquam ipsum harum nam recusandae vel inventore a quidem tempora nostrum delectus, esse porro fugiat sunt veniam ut cumque corrupti, quisquam sapiente! Harum totam ipsa eius aspernatur cum possimus voluptate velit esse ducimus, voluptatum, mollitia quasi praesentium quo? Modi beatae quaerat numquam nobis officiis hic necessitatibus error earum quidem. Laborum ea facilis fugit veritatis suscipit illo praesentium deleniti aspernatur accusamus possimus amet nihil ipsam, placeat, omnis nostrum impedit et pariatur modi quisquam eum. Repellendus aspernatur consequuntur asperiores unde tempora optio magni animi!</p>
+                </div>
+                <div class=" text-center pb-3"><button class="btn btn-success read_more">Read more >>> </button>
+                </div><!-- btn -->
+        
+            </div>
+        </div>
+    </div>
+</div>
+<div class="container my-4">
+    <div class="row">
+        <div class="col-sm-4 ">
+            <div class="text_blog bg-success p-4">
+                <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Cumque consectetur quas explicabo ea odit blanditiis nostrum eaque! Ex numquam ipsum harum nam recusandae vel inventore a quidem tempora nostrum delectus, esse porro fugiat sunt veniam ut cumque corrupti, quisquam sapiente! Harum totam ipsa eius aspernatur cum possimus voluptate velit esse ducimus, voluptatum, mollitia quasi praesentium quo? Modi beatae quaerat numquam nobis officiis hic necessitatibus error earum quidem. Laborum ea facilis fugit veritatis suscipit illo praesentium deleniti aspernatur accusamus possimus amet nihil ipsam, placeat, omnis nostrum impedit et pariatur modi quisquam eum. Repellendus aspernatur consequuntur asperiores unde tempora optio magni animi!</p><br>
+                <div class="more_text">
+                <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Cumque consectetur quas explicabo ea odit blanditiis nostrum eaque! Ex numquam ipsum harum nam recusandae vel inventore a quidem tempora nostrum delectus, esse porro fugiat sunt veniam ut cumque corrupti, quisquam sapiente! Harum totam ipsa eius aspernatur cum possimus voluptate velit esse ducimus, voluptatum, mollitia quasi praesentium quo? Modi beatae quaerat numquam nobis officiis hic necessitatibus error earum quidem. Laborum ea facilis fugit veritatis suscipit illo praesentium deleniti aspernatur accusamus possimus amet nihil ipsam, placeat, omnis nostrum impedit et pariatur modi quisquam eum. Repellendus aspernatur consequuntur asperiores unde tempora optio magni animi!</p>
+                <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Cumque consectetur quas explicabo ea odit blanditiis nostrum eaque! Ex numquam ipsum harum nam recusandae vel inventore a quidem tempora nostrum delectus, esse porro fugiat sunt veniam ut cumque corrupti, quisquam sapiente! Harum totam ipsa eius aspernatur cum possimus voluptate velit esse ducimus, voluptatum, mollitia quasi praesentium quo? Modi beatae quaerat numquam nobis officiis hic necessitatibus error earum quidem. Laborum ea facilis fugit veritatis suscipit illo praesentium deleniti aspernatur accusamus possimus amet nihil ipsam, placeat, omnis nostrum impedit et pariatur modi quisquam eum. Repellendus aspernatur consequuntur asperiores unde tempora optio magni animi!</p><br>
+                
+                <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Cumque consectetur quas explicabo ea odit blanditiis nostrum eaque! Ex numquam ipsum harum nam recusandae vel inventore a quidem tempora nostrum delectus, esse porro fugiat sunt veniam ut cumque corrupti, quisquam sapiente! Harum totam ipsa eius aspernatur cum possimus voluptate velit esse ducimus, voluptatum, mollitia quasi praesentium quo? Modi beatae quaerat numquam nobis officiis hic necessitatibus error earum quidem. Laborum ea facilis fugit veritatis suscipit illo praesentium deleniti aspernatur accusamus possimus amet nihil ipsam, placeat, omnis nostrum impedit et pariatur modi quisquam eum. Repellendus aspernatur consequuntur asperiores unde tempora optio magni animi!</p><br>
+                <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Cumque consectetur quas explicabo ea odit blanditiis nostrum eaque! Ex numquam ipsum harum nam recusandae vel inventore a quidem tempora nostrum delectus, esse porro fugiat sunt veniam ut cumque corrupti, quisquam sapiente! Harum totam ipsa eius aspernatur cum possimus voluptate velit esse ducimus, voluptatum, mollitia quasi praesentium quo? Modi beatae quaerat numquam nobis officiis hic necessitatibus error earum quidem. Laborum ea facilis fugit veritatis suscipit illo praesentium deleniti aspernatur accusamus possimus amet nihil ipsam, placeat, omnis nostrum impedit et pariatur modi quisquam eum. Repellendus aspernatur consequuntur asperiores unde tempora optio magni animi!</p>
+                </div>
+                <div class=" text-center pb-3"><button class="btn btn-success read_more">Read more >>> </button>
+                </div><!-- btn -->
+        
+            </div>
+        </div>
+        <div class="col-sm-4 ">
+            <div class="text_blog bg-primary p-4">
+                <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Cumque consectetur quas explicabo ea odit blanditiis nostrum eaque! Ex numquam ipsum harum nam recusandae vel inventore a quidem tempora nostrum delectus, esse porro fugiat sunt veniam ut cumque corrupti, quisquam sapiente! Harum totam ipsa eius aspernatur cum possimus voluptate velit esse ducimus, voluptatum, mollitia quasi praesentium quo? Modi beatae quaerat numquam nobis officiis hic necessitatibus error earum quidem. Laborum ea facilis fugit veritatis suscipit illo praesentium deleniti aspernatur accusamus possimus amet nihil ipsam, placeat, omnis nostrum impedit et pariatur modi quisquam eum. Repellendus aspernatur consequuntur asperiores unde tempora optio magni animi!</p><br>
+                <div class="more_text">
+                <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Cumque consectetur quas explicabo ea odit blanditiis nostrum eaque! Ex numquam ipsum harum nam recusandae vel inventore a quidem tempora nostrum delectus, esse porro fugiat sunt veniam ut cumque corrupti, quisquam sapiente! Harum totam ipsa eius aspernatur cum possimus voluptate velit esse ducimus, voluptatum, mollitia quasi praesentium quo? Modi beatae quaerat numquam nobis officiis hic necessitatibus error earum quidem. Laborum ea facilis fugit veritatis suscipit illo praesentium deleniti aspernatur accusamus possimus amet nihil ipsam, placeat, omnis nostrum impedit et pariatur modi quisquam eum. Repellendus aspernatur consequuntur asperiores unde tempora optio magni animi!</p>
+                <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Cumque consectetur quas explicabo ea odit blanditiis nostrum eaque! Ex numquam ipsum harum nam recusandae vel inventore a quidem tempora nostrum delectus, esse porro fugiat sunt veniam ut cumque corrupti, quisquam sapiente! Harum totam ipsa eius aspernatur cum possimus voluptate velit esse ducimus, voluptatum, mollitia quasi praesentium quo? Modi beatae quaerat numquam nobis officiis hic necessitatibus error earum quidem. Laborum ea facilis fugit veritatis suscipit illo praesentium deleniti aspernatur accusamus possimus amet nihil ipsam, placeat, omnis nostrum impedit et pariatur modi quisquam eum. Repellendus aspernatur consequuntur asperiores unde tempora optio magni animi!</p><br>
+                
+                <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Cumque consectetur quas explicabo ea odit blanditiis nostrum eaque! Ex numquam ipsum harum nam recusandae vel inventore a quidem tempora nostrum delectus, esse porro fugiat sunt veniam ut cumque corrupti, quisquam sapiente! Harum totam ipsa eius aspernatur cum possimus voluptate velit esse ducimus, voluptatum, mollitia quasi praesentium quo? Modi beatae quaerat numquam nobis officiis hic necessitatibus error earum quidem. Laborum ea facilis fugit veritatis suscipit illo praesentium deleniti aspernatur accusamus possimus amet nihil ipsam, placeat, omnis nostrum impedit et pariatur modi quisquam eum. Repellendus aspernatur consequuntur asperiores unde tempora optio magni animi!</p><br>
+                <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Cumque consectetur quas explicabo ea odit blanditiis nostrum eaque! Ex numquam ipsum harum nam recusandae vel inventore a quidem tempora nostrum delectus, esse porro fugiat sunt veniam ut cumque corrupti, quisquam sapiente! Harum totam ipsa eius aspernatur cum possimus voluptate velit esse ducimus, voluptatum, mollitia quasi praesentium quo? Modi beatae quaerat numquam nobis officiis hic necessitatibus error earum quidem. Laborum ea facilis fugit veritatis suscipit illo praesentium deleniti aspernatur accusamus possimus amet nihil ipsam, placeat, omnis nostrum impedit et pariatur modi quisquam eum. Repellendus aspernatur consequuntur asperiores unde tempora optio magni animi!</p>
+                </div>
+                <div class=" text-center pb-3"><button class="btn btn-success read_more">Read more >>> </button>
+                </div><!-- btn -->
+        
+            </div>
+        </div>
+        <div class="col-sm-4">
+            <div class="text_blog bg-info p-4">
+                <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Cumque consectetur quas explicabo ea odit blanditiis nostrum eaque! Ex numquam ipsum harum nam recusandae vel inventore a quidem tempora nostrum delectus, esse porro fugiat sunt veniam ut cumque corrupti, quisquam sapiente! Harum totam ipsa eius aspernatur cum possimus voluptate velit esse ducimus, voluptatum, mollitia quasi praesentium quo? Modi beatae quaerat numquam nobis officiis hic necessitatibus error earum quidem. Laborum ea facilis fugit veritatis suscipit illo praesentium deleniti aspernatur accusamus possimus amet nihil ipsam, placeat, omnis nostrum impedit et pariatur modi quisquam eum. Repellendus aspernatur consequuntur asperiores unde tempora optio magni animi!</p><br>
+                <div class="more_text">
+                <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Cumque consectetur quas explicabo ea odit blanditiis nostrum eaque! Ex numquam ipsum harum nam recusandae vel inventore a quidem tempora nostrum delectus, esse porro fugiat sunt veniam ut cumque corrupti, quisquam sapiente! Harum totam ipsa eius aspernatur cum possimus voluptate velit esse ducimus, voluptatum, mollitia quasi praesentium quo? Modi beatae quaerat numquam nobis officiis hic necessitatibus error earum quidem. Laborum ea facilis fugit veritatis suscipit illo praesentium deleniti aspernatur accusamus possimus amet nihil ipsam, placeat, omnis nostrum impedit et pariatur modi quisquam eum. Repellendus aspernatur consequuntur asperiores unde tempora optio magni animi!</p>
+                <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Cumque consectetur quas explicabo ea odit blanditiis nostrum eaque! Ex numquam ipsum harum nam recusandae vel inventore a quidem tempora nostrum delectus, esse porro fugiat sunt veniam ut cumque corrupti, quisquam sapiente! Harum totam ipsa eius aspernatur cum possimus voluptate velit esse ducimus, voluptatum, mollitia quasi praesentium quo? Modi beatae quaerat numquam nobis officiis hic necessitatibus error earum quidem. Laborum ea facilis fugit veritatis suscipit illo praesentium deleniti aspernatur accusamus possimus amet nihil ipsam, placeat, omnis nostrum impedit et pariatur modi quisquam eum. Repellendus aspernatur consequuntur asperiores unde tempora optio magni animi!</p><br>
+                
+                <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Cumque consectetur quas explicabo ea odit blanditiis nostrum eaque! Ex numquam ipsum harum nam recusandae vel inventore a quidem tempora nostrum delectus, esse porro fugiat sunt veniam ut cumque corrupti, quisquam sapiente! Harum totam ipsa eius aspernatur cum possimus voluptate velit esse ducimus, voluptatum, mollitia quasi praesentium quo? Modi beatae quaerat numquam nobis officiis hic necessitatibus error earum quidem. Laborum ea facilis fugit veritatis suscipit illo praesentium deleniti aspernatur accusamus possimus amet nihil ipsam, placeat, omnis nostrum impedit et pariatur modi quisquam eum. Repellendus aspernatur consequuntur asperiores unde tempora optio magni animi!</p><br>
+                <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Cumque consectetur quas explicabo ea odit blanditiis nostrum eaque! Ex numquam ipsum harum nam recusandae vel inventore a quidem tempora nostrum delectus, esse porro fugiat sunt veniam ut cumque corrupti, quisquam sapiente! Harum totam ipsa eius aspernatur cum possimus voluptate velit esse ducimus, voluptatum, mollitia quasi praesentium quo? Modi beatae quaerat numquam nobis officiis hic necessitatibus error earum quidem. Laborum ea facilis fugit veritatis suscipit illo praesentium deleniti aspernatur accusamus possimus amet nihil ipsam, placeat, omnis nostrum impedit et pariatur modi quisquam eum. Repellendus aspernatur consequuntur asperiores unde tempora optio magni animi!</p>
+                </div>
+                <div class=" text-center pb-3"><button class="btn btn-success read_more">Read more >>> </button>
+                </div><!-- btn -->
+        
+            </div>
+        </div>
+    </div>
+</div>
+</section>
+<div class="container mb-4">
+    <div class="row">
+        <div class="col-sm-6"><p class="bg-primary p-3">Lorem ipsum dolor sit, amet consectetur adipisicing elit. Vero suscipit excepturi eveniet reprehenderit, magni alias consequatur! Eius, exercitationem! Iure ipsam laudantium provident tenetur dicta tempore, laborum officiis quos inventore officia repellat excepturi dignissimos in numquam eligendi totam quo molestiae nesciunt unde iste et. Pariatur error molestias cum. </p></div>
+        <div class="col-sm-6"><p class="bg-info p-3">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Eveniet sapiente temporibus saepe eaque modi voluptatem magni nulla, animi at, ipsum porro aut praesentium voluptas quis neque dolore laborum voluptatibus libero fugiat suscipit nisi excepturi eligendi ducimus. Dolor reiciendis temporibus quos exercitationem nulla optio. A vel numquam repellat non illum dolores?</p></div>
+    </div>
+</div>
+<div class="section">
+    <div id="1"class="section_1">About</div>
+    <div id="2" class="section_2">Contact</div>
+    <div id="3" class="section_3">Service</div>
+    <div id="4" class="section_4">Blogs</div>
+</div>
+<div class="chevron">
+    <a class="to_top " href="#">Go top</a>
+</div>
+<script src="stycky_menu.js"></script>
+</body>
+</html>
